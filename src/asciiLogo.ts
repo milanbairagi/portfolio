@@ -1,0 +1,1 @@
+export default "\n            ..       : Ef.\n           ,W,     .Et E#Wi\n          t##,    ,W#t E#K#D:\n         L###,   j###t E#t,E#f.\n       .E#j##,  G#fE#t E#WEE##Wt\n      ;WW; ##,:K#i E#t E##Ei;;;;.\n     j#E.  ##f#W,  E#t E#DWWt\n   .D#L    ###K:   E#t E#t f#K;\n  :K#t     ##D.    E#t E#Dfff##E,\n  ...      #G      ..  jLLLLLLLLL;\n           j";
