@@ -45,6 +45,8 @@
   --color-primary: var(--primary-color);
   --color-secondary: var(--secondary-color);
   --color-accent: var(--accent-color);
+  --color-border: var(--border-color);
+  --color-white: var(--while-color);
 }
 
 body {
