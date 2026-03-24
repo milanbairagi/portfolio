@@ -37,6 +37,8 @@
   --primary-color: #463951;
   --secondary-color: #D9D9D9;
   --accent-color: #ECA035;
+  --border-color: #FF79C6;
+  --while-color: #D9D9D9;
 }
 
 @theme {
