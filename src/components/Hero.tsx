@@ -1,20 +1,44 @@
+import { bio } from "../data/personalData";
 import asciiLogo from "../asciiLogo";
+import MainWindow from "./layout/MainWindow";
+import TextH1 from "./ui/TextH1";
+import KeyValue from "./ui/KeyValue";
 
 const Hero = () => {
-  return <div className="flex justify-center gap-10 flex-col md:flex-row container mx-auto">
-    <div>
-      <h2 className="text-3xl">Hey! I'm <span className="highlight">Milan Bairagi</span></h2>
-      <p className="text-sm mt-2 text-wrap">
-        Lorem ipsum dolor sit amet consectetur <span className="highlight">adipisicing elit</span>. Exercitationem, sit doloremque? Odio rerum vero ducimus tenetur omnis nihil numquam ut quibusdam eum sunt itaque maiores voluptas enim natus, eligendi eveniet. Suscipit nam est expedita nobis dolorum, officiis sit eveniet dolor voluptatibus, magni qui architecto deserunt ipsa voluptates earum quidem quaerat, distinctio necessitatibus. Itaque aspernatur esse aliquid atque beatae, alias voluptates iure ipsum doloremque dolor ducimus inventore sit necessitatibus eos excepturi laborum nam! Nisi quaerat quae sequi, ut aliquam sapiente quidem maxime esse, vitae quisquam quos cupiditate aspernatur est optio iste maiores at. Tempore provident quod fugiat modi odio! Maiores, minima?
-      </p>
-    </div>
-    <div>
-      <pre className="text-md">
-        {asciiLogo}
-      </pre>
-    </div>
+  return (
+    <MainWindow>
+      <div className="flex justify-center gap-10 flex-col md:flex-row container mx-auto">
+        {/* Logo */}
+        <div>
+          <pre className="text-md">{asciiLogo}</pre>
+        </div>
 
-  </div>;
+        {/* Description */}
+        <div>
+          <TextH1>MilanBairagi@dev</TextH1>
+
+          <div className="mt-2">
+            {bio.map((data) =>
+              Object.entries(data).map(([key, value]) => {
+                if (!value) return null;
+                if (key === "portfolio") {
+                  return <KeyValue key={key} keyName={key} value={value} link={`https://${value}`} />;
+                }
+                if (key === "email") {
+                  return <KeyValue key={key} keyName={key} value={value} link={`mailto:${value}`} />;
+                }
+                if (key === "linkedin") {
+                  return <KeyValue key={key} keyName={key} value={value} link={`https://www.linkedin.com/in/${value}`} />;
+                }
+                return <KeyValue key={key} keyName={key} value={value} />;
+              })
+            )}
+          </div>
+        </div>
+      </div>
+      ;
+    </MainWindow>
+  );
 };
 
 export default Hero;
