@@ -23,12 +23,4 @@ export const projectData = [
     liveUrl: "https://estate-ease-rho.vercel.app",
     githubUrl: "https://github.com/milanbairagi/EstateEase"
   },
-  {
-    title: "BidThrill",
-    description: "A e-commerce bidding site where user can upload or bid on the products. Features include user authentication, watchlist, comments and bidding system.",
-    image: "project-images/BidThrill.png",
-    technologies: ["Django", "Bootstrap", "SQLite"],
-    liveUrl: "",
-    githubUrl: "https://github.com/milanbairagi/bidthrill"
-  },
 ];
