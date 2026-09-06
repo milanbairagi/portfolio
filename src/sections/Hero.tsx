@@ -1,4 +1,7 @@
+import { FaRegFile } from "react-icons/fa";
 import ApiWindow from "../components/ApiWindow";
+import PrimaryButton from "../components/buttons/PrimaryButton";
+import SecondaryButton from "../components/buttons/SecondaryButton";
 
 const Hero = () => {
   return (
@@ -24,6 +27,10 @@ const Hero = () => {
             sapiente, quisquam eaque debitis soluta aliquam, ab dignissimos iure
             cumque ad. Commodi, aliquam enim.
           </p>
+          <div className="flex flex-col gap-4 mt-6 md:flex-row">
+            <PrimaryButton label="Get in Touch" className="justify-center" />
+            <SecondaryButton label="Download CV" icon={<FaRegFile />} className="justify-center" />
+          </div>
         </div>
 
         <ApiWindow
