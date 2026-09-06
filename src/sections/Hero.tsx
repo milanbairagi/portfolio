@@ -5,7 +5,7 @@ import SecondaryButton from "../components/buttons/SecondaryButton";
 
 const Hero = () => {
   return (
-    <section id="hero">
+    <section id="hero" className="grid h-dvh place-items-center">
       <div
         className="grid grid-cols-1 gap-8 py-16 px-4 mx-auto sm:grid-cols-2 sm:items-center
           "
