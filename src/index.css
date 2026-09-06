@@ -82,7 +82,22 @@ body {
   font-weight: 400;
 }
 
-.highlight {
-  color: var(--accent-color);
-  font-weight: 700;
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color-400) var(--primary-color-900);
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-color-900);
+  /* border-radius: 8px; */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color-400);
+  border-radius: 8px;
 }
