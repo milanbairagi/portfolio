@@ -2,16 +2,37 @@ import ApiWindow from "../components/ApiWindow";
 
 const Hero = () => {
   return (
-    <section>
+    <section id="hero">
       <div
         className="grid grid-cols-1 gap-8 py-16 px-4 mx-auto sm:grid-cols-2 sm:items-center
           "
       >
-        <h1 className="text-3xl text-accent-900">Your Name</h1>
-        <ApiWindow filepath="portfolio_controller.py" apiEndpoint="/api/portfolio">
-          <div className="w-100 h-100">
-            Just a Text
-          </div>
+        <div>
+          <p className="text-lg">
+            <span className="text-primary-400 text-2xl font-bold mr-2">$</span>
+            hi I'm
+          </p>
+          <h1 className="flex gap-2">
+            <span className="text-8xl font-bold text-accent-900">
+              Milan
+            </span>
+            <span className="inline-block w-4 h-22 bg-accent-900 animate-cursor-blink"></span>
+          </h1>
+          <p className="mt-4 text-sm">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
+            numquam earum autem quam est, voluptas consequatur accusantium cum!
+            Nesciunt necessitatibus laborum enim esse aliquam. Omnis facilis,
+            deleniti suscipit maxime incidunt earum quidem dolorem odit ea iste
+            sapiente, quisquam eaque debitis soluta aliquam, ab dignissimos iure
+            cumque ad. Commodi, aliquam enim.
+          </p>
+        </div>
+
+        <ApiWindow
+          filepath="portfolio_controller.py"
+          apiEndpoint="/api/portfolio"
+        >
+          <div className="w-100 h-100">Just a Text</div>
         </ApiWindow>
       </div>
     </section>
