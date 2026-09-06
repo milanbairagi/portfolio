@@ -13,9 +13,7 @@ const Hero = () => {
             hi I'm
           </p>
           <h1 className="flex gap-2">
-            <span className="text-8xl font-bold text-accent-900">
-              Milan
-            </span>
+            <span className="text-8xl font-bold text-accent-900">Milan</span>
             <span className="inline-block w-4 h-22 bg-accent-900 animate-cursor-blink"></span>
           </h1>
           <p className="mt-4 text-sm">
