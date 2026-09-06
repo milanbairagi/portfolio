@@ -73,6 +73,17 @@
   --color-red: var(--red-color);
   --color-yellow: var(--yellow-color);
   --color-green: var(--green-color);
+
+  --animate-cursor-blink: cursor-blink 1s steps(2) infinite;
+
+  @keyframes cursor-blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
 }
 
 body {
