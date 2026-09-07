@@ -1,4 +1,13 @@
-export const projectData = [
+type ProjectData = {
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  liveUrl: string;
+  githubUrl: string;
+};
+
+export const projectData: ProjectData[] = [
   {
     title: "WaveLine",
     description: "A modern, real-time chat application built with Django (Backend) and React (Frontend) that enables seamless communication through WebSocket connections.",
