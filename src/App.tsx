@@ -1,6 +1,7 @@
 import Hero from "./sections/Hero";
 import TechStack from "./sections/TechStack";
 import Projects from "./sections/Projects";
+import Contact from "./sections/Contact";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Hero />
       <TechStack />
       <Projects />
+      <Contact />
     </>
   );
 }
