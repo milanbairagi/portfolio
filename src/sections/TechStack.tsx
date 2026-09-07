@@ -8,12 +8,12 @@ const TechStack = () => {
   return (
     <section id="tech-stack" className="container mt-20 mx-auto">
       <SectionHeading title="Tech Stack" />
-
-      <div>
+    
+      <table>
         {techStack.map((stack) => (
-          <div key={stack.category}>
-            <h3 className="mb-2 text-lg font-bold">{stack.category}</h3>
-            <div className="flex-wrap gap-2 flex">
+          <tr key={stack.category} className="border-b border-primary-700">
+            <th className="px-4 text-lg text-accent-900 font-bold">{stack.category}</th>
+            <td className="flex-wrap gap-2 px-0 py-4 flex">
               {stack.technologies.map((skill) => (
                 <SkillCard
                   key={skill.name}
@@ -22,10 +22,10 @@ const TechStack = () => {
                   color={skill.color}
                 />
               ))}
-            </div>
-          </div>
+            </td>
+          </tr>
         ))}
-      </div>
+      </table>
     </section>
   );
 };

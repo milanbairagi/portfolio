@@ -31,7 +31,7 @@ import { FaLinux } from "react-icons/fa";
 
 const techStack = [
   {
-    "category": "Programming Languages",
+    "category": "Languages",
     "technologies": [
       { "name": "Python", "icon": FaPython, "color": "#3776AB" },
       { "name": "JavaScript", "icon": IoLogoJavascript, "color": "#F7DF1E" },
@@ -42,7 +42,7 @@ const techStack = [
     ]
   },
   {
-    "category": "Frontend Development",
+    "category": "Frontend",
     "technologies": [
       { "name": "React", "icon": FaReact, "color": "#61DAFB" },
       { "name": "TanStack Query", "icon": SiTanstack, "color": "#FF4154" },
@@ -54,7 +54,7 @@ const techStack = [
     ]
   },
   {
-    "category": "Backend Development",
+    "category": "Backend",
     "technologies": [
       { "name": "Django", "icon": SiDjango, "color": "#092E20" },
       { "name": "Django REST Framework", "icon": SiDjango, "color": "#092E20" },
