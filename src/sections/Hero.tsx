@@ -33,12 +33,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <ApiWindow
-          filepath="portfolio_controller.py"
-          apiEndpoint="/api/portfolio"
-        >
-          <div className="w-100 h-100">Just a Text</div>
-        </ApiWindow>
+        <ApiWindow />
       </div>
     </section>
   );
