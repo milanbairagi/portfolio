@@ -53,12 +53,12 @@ const DropDown = ({
         <ul
           className={`${
             showOptions ? "block" : "hidden"
-          } absolute w-full max-h-56 overflow-y-scroll z-10 bg-white border border-gray-400 rounded-b-lg no-scrollbar`}
+          } absolute w-full max-h-56 overflow-y-scroll z-10 bg-primary-800 border border-primary-400 rounded-b-lg no-scrollbar`}
         >
           {options.map((option, index) => (
             <li
               key={index}
-              className="p-2 text-primary-900 hover:bg-indigo-500 hover:text-white cursor-pointer"
+              className="p-2 text-secondary hover:bg-primary-400 hover:text-white cursor-pointer"
               onClick={() => {
                 onChange(option.value);
                 setShowOptions(false);
