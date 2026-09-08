@@ -3,6 +3,8 @@ import { FaRegFile } from "react-icons/fa";
 import Window from "./Window";
 import PrimaryButton from "./buttons/PrimaryButton";
 import DropDown from "../common/DropDown";
+import apiResponseData from "../data/apiResponse.json";
+import JsonViewer from "./JsonViewer";
 
 const requestMethods = [
   { label: "GET", value: "GET" },
@@ -20,9 +22,45 @@ const apiEndpoints = [
 
 type ApiEndpoint = (typeof apiEndpoints)[number]["value"];
 
+const emptyApiResponse = {
+  method: "",
+  status: "",
+  message: "",
+  fields: {},
+};
+
 const ApiWindow = () => {
   const [requestMethod, setRequestMethod] = useState<RequestMethod>("GET");
   const [apiEndpoint, setApiEndpoint] = useState<ApiEndpoint>("/api/projects");
+  const [apiResponse, setApiResponse] = useState(JSON.stringify(emptyApiResponse, null, 2));
+  const [isLoading, setIsLoading] = useState(false);
+
+  const fetchApiResponse = () => {
+    if (!apiEndpoint) return;
+    // Simulate fetching API response based on the selected endpoint
+    // Time out 0.5 seconds to simulate network delay
+    setIsLoading(true);
+    setTimeout(() => {
+      if (requestMethod === "GET") {
+        const response = apiResponseData[apiEndpoint] || emptyApiResponse;
+        setApiResponse(JSON.stringify(response, null, 2));
+      }
+      else {
+        // Simulate a POST request response
+        const response = {
+          method: "POST",
+          status: "success",
+          message: `Successfully posted data to ${apiEndpoint}`,
+          fields: {},
+        };
+        setApiResponse(JSON.stringify(response, null, 2));
+      }
+      setIsLoading(false);
+    }, 500);
+
+    const response = apiResponseData[apiEndpoint] || emptyApiResponse;
+    setApiResponse(JSON.stringify(response, null, 2));
+  };
 
   return (
     <Window>
@@ -32,8 +70,16 @@ const ApiWindow = () => {
         onMethodChange={setRequestMethod}
         apiEndpoint={apiEndpoint}
         onEndpointChange={setApiEndpoint}
+        handleExecute={fetchApiResponse}
       />
-      <div className="p-2 h-75 overflow-scroll"></div>
+      <div className="p-2 h-75 overflow-scroll">
+        {isLoading && (
+          <div className="justify-center h-full flex items-center">
+            <span className="text-sm text-secondary">Loading...</span>
+          </div>
+        )}
+        {!isLoading && <JsonViewer jsonString={apiResponse} />}
+      </div>
     </Window>
   );
 };
@@ -52,6 +98,7 @@ type ActionBarProps = {
   onMethodChange: (method: RequestMethod) => void;
   apiEndpoint: string;
   onEndpointChange: (endpoint: ApiEndpoint) => void;
+  handleExecute: () => void;
 };
 
 const ActionBar = ({
@@ -59,6 +106,7 @@ const ActionBar = ({
   onMethodChange,
   apiEndpoint,
   onEndpointChange,
+  handleExecute,
 }: ActionBarProps) => {
   return (
     <div className="px-2 py-4 gap-2 bg-primary-600 text-sm flex items-center">
@@ -84,7 +132,7 @@ const ActionBar = ({
         divClassName="flex-1"
       />
 
-      <PrimaryButton label="Execute" size="sm" className="px-2" />
+      <PrimaryButton label="Execute" size="sm" className="px-2" onClick={handleExecute} />
     </div>
   );
 };
