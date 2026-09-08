@@ -99,6 +99,15 @@ body {
   scrollbar-color: var(--primary-color-400) var(--primary-color-900);
 }
 
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
