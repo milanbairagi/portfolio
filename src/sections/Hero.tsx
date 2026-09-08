@@ -20,14 +20,12 @@ const Hero = () => {
             <span className="inline-block w-4 h-22 bg-accent-900 animate-cursor-blink"></span>
           </h1>
           <p className="mt-4 text-sm">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
-            numquam earum autem quam est, voluptas consequatur accusantium cum!
-            Nesciunt necessitatibus laborum enim esse aliquam. Omnis facilis,
-            deleniti suscipit maxime incidunt earum quidem dolorem odit ea iste
-            sapiente, quisquam eaque debitis soluta aliquam, ab dignissimos iure
-            cumque ad. Commodi, aliquam enim.
+            I am a Full Stack Developer who enjoys building secure, real-time web applications from
+            the ground up. I primarily work with Django and React, and I'm particularly interested in backend 
+            architecture, security, and systems that solve real-world problems. I've built projects ranging from 
+            zero-knowledge password management to real-time communication and property management platforms.
           </p>
-          <div className="flex flex-col gap-4 mt-6 md:flex-row">
+          <div className="flex-col gap-4 mt-6 flex md:flex-row">
             <PrimaryButton label="Get in Touch" className="justify-center" />
             <SecondaryButton label="Download CV" icon={<FaRegFile />} className="justify-center" />
           </div>
