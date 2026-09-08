@@ -1,0 +1,147 @@
+{
+  "/api/portfolio": {
+    "name": "Milan Bairagi",
+    "title": "Full Stack Developer",
+    "location": "Nepal",
+    "education": {
+      "degree": "Bachelor in Information Technology",
+      "institution": "Amrit Science Campus, Tribhuvan University",
+      "period": "Nov 2023 – Nov 2027"
+    },
+    "summary": "Full Stack Developer focused on building secure, real-time, and responsive web applications with Django, React, and Tailwind CSS.",
+    "specializations": [
+      "Zero-knowledge encrypted systems",
+      "Real-time communication",
+      "Secure authentication",
+      "Responsive UI design",
+      "Database design",
+      "DevOps"
+    ]
+  },
+
+  "/api/projects": {
+    "count": 3,
+    "projects": [
+      {
+        "name": "LockLeaf",
+        "type": "Secure End-to-End Encrypted Password Manager",
+        "description": "A zero-knowledge password manager with a Django backend and React Chrome extension frontend.",
+        "highlights": [
+          "Zero-knowledge architecture",
+          "Client-side AES encryption",
+          "JWT authentication pipeline",
+          "React Chrome extension",
+          "Encrypted blob storage"
+        ],
+        "stack": [
+          "Django",
+          "Django REST Framework",
+          "React",
+          "Web Crypto API",
+          "PostgreSQL",
+          "JWT"
+        ]
+      },
+      {
+        "name": "WaveLine",
+        "type": "Real-Time Web Chat Platform",
+        "description": "A web-based messaging application with real-time communication and presence tracking.",
+        "highlights": [
+          "WebSocket messaging",
+          "Presence tracking",
+          "Read receipts",
+          "Redis caching",
+          "JWT authentication",
+          "RESTful APIs"
+        ],
+        "stack": [
+          "Django",
+          "Django Channels",
+          "React",
+          "Tailwind CSS",
+          "Axios",
+          "Redis",
+          "WebSockets",
+          "JWT",
+          "Docker"
+        ]
+      },
+      {
+        "name": "EstateEase",
+        "type": "Real Estate Platform",
+        "description": "A full-stack platform for listing, filtering, renting, and selling properties with integrated messaging.",
+        "highlights": [
+          "Dynamic property filtering",
+          "Property management",
+          "Buyer-owner messaging",
+          "User dashboard",
+          "Optimized database queries",
+          "JWT authentication"
+        ],
+        "stack": [
+          "Django",
+          "Python",
+          "React",
+          "Axios",
+          "JWT",
+          "Tailwind CSS",
+          "PostgreSQL",
+          "HTML",
+          "CSS"
+        ]
+      }
+    ]
+  },
+
+  "/api/skills": {
+    "languages": [
+      "Python",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "C",
+      "C++"
+    ],
+    "frontend": [
+      "React",
+      "TanStack Query",
+      "Tailwind CSS",
+      "Axios",
+      "HTML",
+      "CSS"
+    ],
+    "backend": [
+      "Django",
+      "Django REST Framework",
+      "Django Channels",
+      "Celery"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MySQL",
+      "Redis",
+      "SQLite"
+    ],
+    "devops": [
+      "Git",
+      "GitHub",
+      "Docker",
+      "Azure",
+      "CI/CD",
+      "Nginx"
+    ],
+    "other": [
+      "WebSockets",
+      "JWT Authentication",
+      "OAuth",
+      "Testing"
+    ]
+  },
+
+  "/api/contact": {
+    "email": "meelanbairagi@gmail.com",
+    "github": "https://github.com/meelanbairagi",
+    "linkedin": "https://www.linkedin.com/in/milan-bairagi/",
+    "Phone": "+977 986-123-4567"
+  }
+}
