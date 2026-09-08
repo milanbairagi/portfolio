@@ -19,7 +19,7 @@ export const projectData: ProjectData[] = [
   {
     title: "LeafLock",
     description: "A secure password manager built with Django REST API and React. It allows users to store, manage, and generate strong passwords with features like encryption and user authentication.",
-    image: "project-images/BidThrill.png",
+    image: "project-images/leaflock.png",
     technologies: ["React", "Django", "PostgreSQL", "DRF", "Tailwind CSS", "JWT"],
     liveUrl: "https://leaf-lock.vercel.app",
     githubUrl: "https://github.com/milanbairagi/LockLeaf"
