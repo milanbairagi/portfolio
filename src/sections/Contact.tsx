@@ -13,7 +13,7 @@ const Contact = () => {
     <section id="contact" className="container mt-12 px-4 py-12 mx-auto">
       <SectionHeading title="contact" />
       <div className="mx-auto max-w-5xl text-center">
-        <p className="mx-auto max-w-3xl text-base text-secondary/90 leading-relaxed sm:text-xl">
+        <p className="mx-auto text-base text-secondary/90 leading-relaxed sm:text-xl">
           Have a project in mind or want to collaborate? I'd love to hear from
           you. Let's discuss how we can work together to bring your ideas to
           life.
