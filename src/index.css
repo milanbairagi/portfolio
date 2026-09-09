@@ -1,33 +1,32 @@
 @import "tailwindcss";
 
-
 @font-face {
-  font-family: 'JetBrains Mono';
-  src: url('/fonts/JetBrainsMono-Light.ttf') format('truetype');
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMono-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'JetBrains Mono';
-  src: url('/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMono-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'JetBrains Mono';
-  src: url('/fonts/JetBrainsMonoNL-Medium.ttf') format('truetype');
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMonoNL-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'JetBrains Mono';
-  src: url('/fonts/JetBrainsMono-Bold.ttf') format('truetype');
+  font-family: "JetBrains Mono";
+  src: url("/fonts/JetBrainsMono-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -35,24 +34,23 @@
 
 :root {
   --primary-color-900: #121212;
-  --primary-color-800: #1A1A1A;
-  --primary-color-700: #1E1E1E;
+  --primary-color-800: #1a1a1a;
+  --primary-color-700: #1e1e1e;
   --primary-color-600: #252525;
   --primary-color-500: #222222;
-  --primary-color-400: #444444;  /* Border Color */
-  --primary-color-300: #4A4A4A;
+  --primary-color-400: #444444; /* Border Color */
+  --primary-color-300: #4a4a4a;
 
+  --secondary-color: #d9d9d9;
 
-  --secondary-color: #D9D9D9;
+  --accent-color-900: #8bc34a;
+  --accent-color-500: #4d6b2a;
 
-  --accent-color-900: #8BC34A;
-  --accent-color-500: #4D6B2A;
+  --while-color: #d9d9d9;
 
-  --while-color: #D9D9D9;
-
-  --red-color: #FF5F56;
-  --yellow-color: #FFBD2E;
-  --green-color: #27C03F;
+  --red-color: #ff5f56;
+  --yellow-color: #ffbd2e;
+  --green-color: #27c03f;
 }
 
 @theme {
@@ -78,7 +76,8 @@
   --animate-cursor-blink: cursor-blink 1s steps(2) infinite;
 
   @keyframes cursor-blink {
-    0%, 100% {
+    0%,
+    100% {
       opacity: 1;
     }
     50% {
@@ -92,7 +91,7 @@ html {
 }
 
 body {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   background-color: var(--primary-color-900);
   color: var(--secondary-color);
   font-weight: 400;
@@ -103,14 +102,13 @@ body {
   scrollbar-color: var(--primary-color-400) var(--primary-color-900);
 }
 
-
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 .no-scrollbar {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
 ::-webkit-scrollbar {
   width: 4px;
