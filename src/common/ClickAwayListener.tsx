@@ -5,7 +5,11 @@ type ClickAwayListenerProps = HTMLAttributes<HTMLDivElement> & {
   onClickAway: () => void;
 };
 
-function ClickAwayListener({ children, onClickAway, ...props }: ClickAwayListenerProps) {
+function ClickAwayListener({
+  children,
+  onClickAway,
+  ...props
+}: ClickAwayListenerProps) {
   const ref: React.RefObject<HTMLDivElement | null> = useRef(null);
 
   useEffect(() => {
@@ -22,9 +26,11 @@ function ClickAwayListener({ children, onClickAway, ...props }: ClickAwayListene
     };
   }, [onClickAway]);
 
-  return <div ref={ref} {...props}>
-    {children}
-  </div>;
+  return (
+    <div ref={ref} {...props}>
+      {children}
+    </div>
+  );
 }
 
 export default ClickAwayListener;

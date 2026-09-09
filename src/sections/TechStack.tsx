@@ -8,11 +8,13 @@ const TechStack = () => {
   return (
     <section id="tech-stack" className="container mt-4 mx-auto">
       <SectionHeading title="Tech Stack" />
-    
+
       <table>
         {techStack.map((stack) => (
           <tr key={stack.category} className="border-b border-primary-700">
-            <th className="px-4 text-lg text-accent-900 font-bold">{stack.category}</th>
+            <th className="px-4 text-lg text-accent-900 font-bold">
+              {stack.category}
+            </th>
             <td className="flex-wrap gap-2 px-0 py-4 flex">
               {stack.technologies.map((skill) => (
                 <SkillCard
@@ -30,14 +32,24 @@ const TechStack = () => {
   );
 };
 
-const SkillCard = ({ name, icon, color }: { name: string; icon: ReactNode; color?: string }) => {
+const SkillCard = ({
+  name,
+  icon,
+  color,
+}: {
+  name: string;
+  icon: ReactNode;
+  color?: string;
+}) => {
   const isLightHoverColor = color ? getIsLightColor(color) : false;
 
   const skillStyle = {
     ["--skill-hover"]: color ?? "var(--primary-color-400)",
   } as CSSProperties;
 
-  const hoverTextClass = isLightHoverColor ? "hover:text-primary-900" : "hover:text-white";
+  const hoverTextClass = isLightHoverColor
+    ? "hover:text-primary-900"
+    : "hover:text-white";
 
   return (
     <div

@@ -32,7 +32,9 @@ const emptyApiResponse = {
 const ApiWindow = () => {
   const [requestMethod, setRequestMethod] = useState<RequestMethod>("GET");
   const [apiEndpoint, setApiEndpoint] = useState<ApiEndpoint>("/api/projects");
-  const [apiResponse, setApiResponse] = useState(JSON.stringify(emptyApiResponse, null, 2));
+  const [apiResponse, setApiResponse] = useState(
+    JSON.stringify(emptyApiResponse, null, 2),
+  );
   const [isLoading, setIsLoading] = useState(false);
 
   const fetchApiResponse = () => {
@@ -44,8 +46,7 @@ const ApiWindow = () => {
       if (requestMethod === "GET") {
         const response = apiResponseData[apiEndpoint] || emptyApiResponse;
         setApiResponse(JSON.stringify(response, null, 2));
-      }
-      else {
+      } else {
         // Simulate a POST request response
         const response = {
           method: "POST",
@@ -132,7 +133,12 @@ const ActionBar = ({
         divClassName="flex-1"
       />
 
-      <PrimaryButton label="Execute" size="sm" className="px-2" onClick={handleExecute} />
+      <PrimaryButton
+        label="Execute"
+        size="sm"
+        className="px-2"
+        onClick={handleExecute}
+      />
     </div>
   );
 };

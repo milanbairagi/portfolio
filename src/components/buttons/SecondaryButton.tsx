@@ -1,5 +1,4 @@
-
-import type { ButtonHTMLAttributes, ReactNode } from "react"
+import type { ButtonHTMLAttributes, ReactNode } from "react";
 
 type SecondaryButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   label?: string;

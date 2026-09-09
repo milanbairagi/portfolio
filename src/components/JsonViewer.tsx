@@ -1,11 +1,17 @@
-import { Highlight, themes } from "prism-react-renderer"
+import { Highlight, themes } from "prism-react-renderer";
 
 const JsonViewer = ({ jsonString }: { jsonString: string }) => {
-
   return (
-    <Highlight theme={themes.gruvboxMaterialDark} code={jsonString} language="json">
+    <Highlight
+      theme={themes.gruvboxMaterialDark}
+      code={jsonString}
+      language="json"
+    >
       {({ style, tokens, getLineProps, getTokenProps }) => (
-        <pre style={{...style, backgroundColor: "transparent"}} className="text-sm">
+        <pre
+          style={{ ...style, backgroundColor: "transparent" }}
+          className="text-sm"
+        >
           {tokens.map((line, i) => (
             <div key={i} {...getLineProps({ line })}>
               {/* <span>{i + 1}</span> */}
