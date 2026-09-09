@@ -45,12 +45,14 @@ const ProjectCard = ({
           ))}
         </div>
         <div className="gap-2 mt-4 flex">
-          <PrimaryButton
-            label="Live"
-            size="sm"
-            icon={<GoArrowUpRight />}
-            onClick={() => window.open(projectUrl, "_blank")}
-          />
+          {projectUrl && (
+            <PrimaryButton
+              label="Live"
+              size="sm"
+              icon={<GoArrowUpRight />}
+              onClick={() => window.open(projectUrl, "_blank")}
+            />
+          )}
           <SecondaryButton
             label="Source"
             size="sm"

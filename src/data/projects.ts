@@ -38,7 +38,7 @@ export const projectData: ProjectData[] = [
       "Tailwind CSS",
       "JWT",
     ],
-    liveUrl: "https://leaf-lock.vercel.app",
+    liveUrl: "",
     githubUrl: "https://github.com/milanbairagi/LockLeaf",
   },
   {
