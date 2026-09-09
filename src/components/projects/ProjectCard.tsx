@@ -17,19 +17,19 @@ type ProjectCardProps = {
 const ProjectCard = ({ title, description, imageUrl, projectUrl, githubUrl, technologies, className, imagePosition="left" }: ProjectCardProps) => {
   return (
     <div className={`flex ${imagePosition === "left" ? "flex-col md:flex-row" : "flex-col md:flex-row-reverse"} gap-4 p-4 rounded-md ${className}`}>
-      <img src={imageUrl} alt={title} className="object-cover rounded-md md:max-w-[30%] aspect-video" />
+      <img src={imageUrl} alt={title} className="object-cover rounded-md md:max-w-[24%] aspect-video" />
       <div className="flex-1 flex-col justify-between flex">
         <div>
           <h3 className="text-2xl font-bold">{title}</h3>
           <p className="text-sm text-gray-400">{description}</p>
 
-          <div className="flex-wrap gap-2 mt-2 flex">
-            {technologies.map((tech) => (
-              <TechnologyCard key={tech} name={tech} />
-            ))}
-          </div>
         </div>
 
+        <div className="flex-wrap gap-2 mt-2 flex">
+          {technologies.map((tech) => (
+            <TechnologyCard key={tech} name={tech} />
+          ))}
+        </div>
         <div className="gap-2 mt-4 flex">
           <PrimaryButton label="Live" size="sm" icon={<GoArrowUpRight />} onClick={() => window.open(projectUrl, "_blank")} />
           <SecondaryButton label="Source" size="sm" icon={<FaGithub />} onClick={() => window.open(githubUrl, "_blank")} />
