@@ -94,14 +94,7 @@
   },
 
   "/api/skills": {
-    "languages": [
-      "Python",
-      "JavaScript",
-      "HTML",
-      "CSS",
-      "C",
-      "C++"
-    ],
+    "languages": ["Python", "JavaScript", "HTML", "CSS", "C", "C++"],
     "frontend": [
       "React",
       "TanStack Query",
@@ -110,37 +103,15 @@
       "HTML",
       "CSS"
     ],
-    "backend": [
-      "Django",
-      "Django REST Framework",
-      "Django Channels",
-      "Celery"
-    ],
-    "databases": [
-      "PostgreSQL",
-      "MySQL",
-      "Redis",
-      "SQLite"
-    ],
-    "devops": [
-      "Git",
-      "GitHub",
-      "Docker",
-      "Azure",
-      "CI/CD",
-      "Nginx"
-    ],
-    "other": [
-      "WebSockets",
-      "JWT Authentication",
-      "OAuth",
-      "Testing"
-    ]
+    "backend": ["Django", "Django REST Framework", "Django Channels", "Celery"],
+    "databases": ["PostgreSQL", "MySQL", "Redis", "SQLite"],
+    "devops": ["Git", "GitHub", "Docker", "Azure", "CI/CD", "Nginx"],
+    "other": ["WebSockets", "JWT Authentication", "OAuth", "Testing"]
   },
 
   "/api/contact": {
     "email": "meelanbairagi@gmail.com",
-    "github": "https://github.com/meelanbairagi",
+    "github": "https://github.com/milanbairagi",
     "linkedin": "https://www.linkedin.com/in/milan-bairagi/"
   }
 }

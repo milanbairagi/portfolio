@@ -9,7 +9,6 @@ const Hero = () => {
   };
 
   const handleDownloadCV = () => {
-    // Logic to download CV
     const link = document.createElement("a");
     link.href = "/Resume.pdf";
     link.download = "Milan_CV.pdf";

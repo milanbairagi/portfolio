@@ -31,7 +31,7 @@ const emptyApiResponse = {
 
 const ApiWindow = () => {
   const [requestMethod, setRequestMethod] = useState<RequestMethod>("GET");
-  const [apiEndpoint, setApiEndpoint] = useState<ApiEndpoint>("/api/projects");
+  const [apiEndpoint, setApiEndpoint] = useState<ApiEndpoint>("/api/portfolio");
   const [apiResponse, setApiResponse] = useState(
     JSON.stringify(emptyApiResponse, null, 2),
   );
