@@ -4,6 +4,20 @@ import PrimaryButton from "../components/buttons/PrimaryButton";
 import SecondaryButton from "../components/buttons/SecondaryButton";
 
 const Hero = () => {
+  const handleGoToContact = () => {
+    window.location.href = "#contact";
+  };
+
+  const handleDownloadCV = () => {
+    // Logic to download CV
+    const link = document.createElement("a");
+    link.href = "/Resume.pdf";
+    link.download = "Milan_CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       id="hero"
@@ -31,11 +45,16 @@ const Hero = () => {
             real-time communication and property management platforms.
           </p>
           <div className="flex-col gap-4 mt-6 flex md:flex-row">
-            <PrimaryButton label="Get in Touch" className="justify-center" />
+            <PrimaryButton
+              label="Get in Touch"
+              className="justify-center"
+              onClick={handleGoToContact}
+            />
             <SecondaryButton
               label="Download CV"
               icon={<FaRegFile />}
               className="justify-center"
+              onClick={handleDownloadCV}
             />
           </div>
         </div>
