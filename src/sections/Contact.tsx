@@ -1,12 +1,18 @@
+import { useState } from "react";
 import { FiCopy, FiGithub, FiLinkedin } from "react-icons/fi";
 import { GoMail } from "react-icons/go";
 import SectionHeading from "../components/texts/SectionHeading";
 import Window from "../components/Window";
 import { contacts } from "../data/contacts";
+import { FaCheck } from "react-icons/fa6";
 
 const Contact = () => {
+  const [isCopied, setIsCopied] = useState(false);
+
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(contacts.email);
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2000);
   };
 
   return (
@@ -56,7 +62,11 @@ const Contact = () => {
                   className="h-8 w-8 justify-center border border-primary-400 bg-primary-700 text-secondary rounded-md flex items-center transition-colors hover:bg-primary-500"
                   onClick={handleCopyEmail}
                 >
-                  <FiCopy className="text-sm" />
+                  {isCopied ? (
+                    <FaCheck className="text-sm " />
+                  ) : (
+                    <FiCopy className="text-sm" />
+                  )}
                 </button>
               </div>
 
