@@ -36,7 +36,7 @@ const Hero = () => {
             real-time communication and property management platforms.
           </p>
           <div className="flex-col gap-4 mt-6 flex md:flex-row">
-            <a href="#contact" target="_blank" rel="noopener noreferrer">
+            <a href="#contact">
               <PrimaryButton
                 label="Get in Touch"
                 icon={<FaRegPaperPlane />}
