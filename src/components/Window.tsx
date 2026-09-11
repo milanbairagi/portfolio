@@ -5,7 +5,7 @@ type props = {
 
 const Window = ({ title, children }: props) => {
   return (
-    <div className="flex-col border border-primary-400 min-h-72 rounded-lg flex">
+    <div className="flex-col border border-primary-400 min-h-72 rounded-lg overflow-hidden flex">
       <TopBar title={title} />
       {children}
     </div>
