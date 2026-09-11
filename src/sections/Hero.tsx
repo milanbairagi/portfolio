@@ -44,7 +44,7 @@ const Hero = () => {
               />
 
             </a>
-            <a href="/Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/milan-bairagi-resume.pdf" target="_blank" rel="noopener noreferrer">
               <SecondaryButton
                 label="Resume"
                 icon={<FaRegFile />}
