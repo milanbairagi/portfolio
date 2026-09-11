@@ -1,7 +1,11 @@
 import { FaRegFile } from "react-icons/fa";
+import { GoMail } from "react-icons/go";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 import ApiWindow from "../components/ApiWindow";
 import PrimaryButton from "../components/buttons/PrimaryButton";
 import SecondaryButton from "../components/buttons/SecondaryButton";
+import type { HTMLAttributes } from "react";
+import { contacts } from "../data/contacts";
 
 const Hero = () => {
   const handleGoToContact = () => {
@@ -56,11 +60,45 @@ const Hero = () => {
               onClick={handleDownloadCV}
             />
           </div>
+
+          {/* Social Links */}
+          <div className="flex gap-4 mt-6">
+            <SocialLink href={`https://www.${contacts.github}`}>
+              <FiGithub />
+              <span>Github</span>
+            </SocialLink>
+            <SocialLink href={`https://www.${contacts.linkedin}`}>
+              <FiLinkedin />
+              <span>LinkedIn</span>
+            </SocialLink>
+            <SocialLink href={`mailto:${contacts.email}`}>
+              <GoMail />
+              <span className="ml-0.5">Email</span>
+            </SocialLink>
+          </div>
         </div>
 
         <ApiWindow />
       </div>
     </section>
+  );
+};
+
+type SocialLinkProps = HTMLAttributes<HTMLAnchorElement> & {
+  href: string;
+  className?: string;
+};
+
+const SocialLink = ({ href, className="", children }: SocialLinkProps) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`flex gap-0.5 items-center text-sm text-accent-900 border-b hover:border-b-0 transition-all duration-100 ${className}`}
+    >
+      {children}
+    </a>
   );
 };
 
