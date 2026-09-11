@@ -6,7 +6,7 @@ import { getIsLightColor } from "../utils/style";
 
 const TechStack = () => {
   return (
-    <section id="tech-stack" className="container mt-4 mx-auto">
+    <section id="tech-stack" className="container mt-4 px-4 mx-auto">
       <SectionHeading title="Tech Stack" />
 
       <table>

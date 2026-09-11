@@ -4,7 +4,7 @@ import ProjectCard from "../components/projects/ProjectCard";
 
 const Projects = () => {
   return (
-    <section id="projects" className="container mt-12 mx-auto">
+    <section id="projects" className="container mt-12 px-4 mx-auto">
       <SectionHeading title="Projects" />
 
       <div className="flex-col gap-8 mt-8 flex">
