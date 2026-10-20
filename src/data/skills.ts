@@ -6,6 +6,7 @@ import { TbBrandCpp } from "react-icons/tb";
 import { TbBrandCSharp } from "react-icons/tb";
 
 import { FaReact } from "react-icons/fa";
+import { TbBrandReactNative } from "react-icons/tb";
 import { SiTanstack } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaBootstrap } from "react-icons/fa";
@@ -44,6 +45,7 @@ const techStack = [
     category: "Frontend",
     technologies: [
       { name: "React", icon: FaReact, color: "#61DAFB" },
+      { name: "React Native", icon: TbBrandReactNative, color: "#61DAFB" },
       { name: "TanStack Query", icon: SiTanstack, color: "#FF4154" },
       { name: "Tailwind CSS", icon: RiTailwindCssFill, color: "#06B6D4" },
       { name: "Bootstrap", icon: FaBootstrap, color: "#7952B3" },

@@ -11,16 +11,20 @@ export const projectData: ProjectData[] = [
   {
     title: "WaveLine",
     description:
-      "A modern, real-time chat application built with Django (Backend) and React (Frontend) that enables seamless communication through WebSocket connections.",
+      "A cross-platform messaging application featuring real-time chat, presence tracking, read receipts, and audio/video calling. Built with Django Channels, React, and React Native.",
     image: "project-images/WaveLine.png",
     technologies: [
       "Django",
       "React",
+      "React Native",
+      "WebRTC",
       "PostgreSQL",
+      "Redis",
       "DRF",
       "Tailwind CSS",
       "JWT",
       "WebSocket",
+      "Docker",
     ],
     liveUrl: "https://wave-line.vercel.app",
     githubUrl: "https://github.com/milanbairagi/WaveLine",

@@ -44,10 +44,12 @@
       },
       {
         "name": "WaveLine",
-        "type": "Real-Time Web Chat Platform",
-        "description": "A web-based messaging application with real-time communication and presence tracking.",
+        "type": "Real-Time Web & Mobile Chat Platform",
+        "description": "Cross-platform messaging application featuring real-time chat, presence tracking, read receipts, and audio/video calling.",
         "highlights": [
           "WebSocket messaging",
+          "WebRTC audio/video calls",
+          "React Native",
           "Presence tracking",
           "Read receipts",
           "Redis caching",
@@ -58,6 +60,8 @@
           "Django",
           "Django Channels",
           "React",
+          "React Native",
+          "WebRTC",
           "Tailwind CSS",
           "Axios",
           "Redis",
@@ -97,6 +101,7 @@
     "languages": ["Python", "JavaScript", "HTML", "CSS", "C", "C++"],
     "frontend": [
       "React",
+      "React Native",
       "TanStack Query",
       "Tailwind CSS",
       "Axios",
