@@ -15,7 +15,7 @@ type RequestMethod = (typeof requestMethods)[number]["value"];
 
 const apiEndpoints = [
   { label: "/api/projects", value: "/api/projects" },
-  { label: "/api/portfolio", value: "/api/portfolio" },
+  { label: "/api/about", value: "/api/about" },
   { label: "/api/skills", value: "/api/skills" },
   { label: "/api/contact", value: "/api/contact" },
 ] as const;
@@ -31,7 +31,7 @@ const emptyApiResponse = {
 
 const ApiWindow = () => {
   const [requestMethod, setRequestMethod] = useState<RequestMethod>("GET");
-  const [apiEndpoint, setApiEndpoint] = useState<ApiEndpoint>("/api/portfolio");
+  const [apiEndpoint, setApiEndpoint] = useState<ApiEndpoint>("/api/about");
   const [apiResponse, setApiResponse] = useState(
     JSON.stringify(emptyApiResponse, null, 2),
   );
