@@ -22,7 +22,7 @@ import { SiPostgresql } from "react-icons/si";
 import { SiJsonwebtokens } from "react-icons/si";
 
 import { FaDocker } from "react-icons/fa";
-import { VscAzure } from "react-icons/vsc";
+import { FaAws } from "react-icons/fa6";
 import { SiNginx } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -70,7 +70,7 @@ const techStack = [
     category: "DevOps & Tools",
     technologies: [
       { name: "Docker", icon: FaDocker, color: "#2496ED" },
-      { name: "Azure", icon: VscAzure, color: "#0078D4" },
+      { name: "AWS", icon: FaAws, color: "#FF9900" },
       { name: "Nginx", icon: SiNginx, color: "#009639" },
       { name: "Git", icon: FaGitAlt, color: "#F05032" },
       { name: "GitHub", icon: FaGithub, color: "#181717" },
