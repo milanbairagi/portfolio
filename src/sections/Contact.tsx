@@ -16,7 +16,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="container mt-12 px-4 py-12 mx-auto">
+    <section id="contact" className="container mt-12 px-4 pt-12 pb-32 mx-auto">
       <SectionHeading title="contact" />
       <div className="mx-auto max-w-5xl text-center">
         <p className="mx-auto text-base text-secondary/90 leading-relaxed sm:text-xl">
