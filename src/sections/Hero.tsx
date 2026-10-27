@@ -28,9 +28,9 @@ const Hero = () => {
             <span className="inline-block w-4 h-22 bg-accent-900 animate-cursor-blink"></span>
           </h1>
           <p className="mt-4 text-sm">
-            I am a Full Stack Developer who enjoys building secure, real-time
-            web applications from the ground up. I primarily work with Django
-            and React, and I'm particularly interested in backend architecture,
+            I am a <Highlight>Full Stack Developer</Highlight> who enjoys building secure, real-time
+            web applications from the ground up. I primarily work with <Highlight>Django </Highlight>
+            and <Highlight>React</Highlight>, and I'm particularly interested in backend architecture,
             security, and systems that solve real-world problems. I've built
             projects ranging from zero-knowledge password management to
             real-time communication and property management platforms.
@@ -93,6 +93,12 @@ const SocialLink = ({ href, className="", children, ...props }: SocialLinkProps)
     >
       {children}
     </a>
+  );
+};
+
+const Highlight = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <span className="text-accent-900 font-bold">{children}</span>
   );
 };
 
