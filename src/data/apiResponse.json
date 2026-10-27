@@ -98,20 +98,30 @@
   },
 
   "/api/skills": {
-    "languages": ["Python", "JavaScript", "HTML", "CSS", "C", "C++"],
+    "languages": ["Python", "JavaScript", "HTML", "CSS", "C", "C++", "C#"],
     "frontend": [
       "React",
       "React Native",
       "TanStack Query",
       "Tailwind CSS",
+      "Bootstrap",
       "Axios",
-      "HTML",
-      "CSS"
+      "Redux",
+      "WebSockets",
+      "Figma"
     ],
-    "backend": ["Django", "Django REST Framework", "Django Channels", "Celery"],
-    "databases": ["PostgreSQL", "MySQL", "Redis", "SQLite"],
-    "devops": ["Git", "GitHub", "Docker", "Azure", "CI/CD", "Nginx"],
-    "other": ["WebSockets", "JWT Authentication", "OAuth", "Testing"]
+    "backend": [
+      "Django",
+      "Django REST Framework",
+      "Django Channels",
+      "Celery",
+      "Redis",
+      "JWT",
+      "MySQL",
+      "PostgreSQL",
+      "SQLite"
+    ],
+    "devops_and_tools": ["Git", "GitHub", "Docker", "AWS", "Gunicorn", "Nginx", "Linux"]
   },
 
   "/api/contact": {
